@@ -1,0 +1,26 @@
+include ./list-item
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Mobile Store Management
+        link(rel="stylesheet" href="/style.css")
+    body 
+    h1 Mobile Store Management
+    hr
+    a(href="/mobile/form",class="new-button") new
+    table
+        th Stock ID 
+        th Created
+        th Product
+        th Description
+        th Price
+        th Quantity
+
+        th 
+
+        th 
+        - for(let mobile of mobiles)
+          +listItem(mobile)

@@ -1,0 +1,13 @@
+mixin listItem(mobile)
+  tr
+    td #{mobile.id}
+    td #{mobile.timecreate}
+    td #{mobile.product}
+    td #{mobile.description}
+    td #{mobile.price}
+    td #{mobile.quantity}
+    td
+      button(type="button", onclick="location.href='/mobile/add/" + mobile.id + "'", class="plus-button") 
+      button(type="button", onclick="location.href='/mobile/minus/" + mobile.id + "'", class="minus-button") 
+    td
+      button(type="button", onclick="location.href='/mobile/form/" + mobile.id + "'", class="edit-button") 

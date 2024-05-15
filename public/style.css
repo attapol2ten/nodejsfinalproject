@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    padding: 1rem;
+}
+table{
+    width: 100%;
+    table-layout:auto;
+    border-collapse: collapse; 
+}
+th {
+    background-color: rgb(0, 116, 255);
+    font-weight: bold;
+    color: white;
+    padding: 2.5rem;
+}
+
+td {  
+    border-bottom: 2px solid rgb(236, 238, 238);  
+    text-align: center;
+    padding: 1.5rem;    
+}
+tr:hover{  
+    background-color: rgb(173, 229, 255);
+}
+
+.plus-button{
+    background-image: url('plus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px; 
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px; 
+    background-color: transparent; 
+    transition: transform 0.5s ease;
+    margin-right: 3px;
+  }
+.plus-button:active {
+    transform: scale(3); /* ขยายรูปภาพเมื่อคลิก */
+  }
+.minus-button{
+    background-image: url('minus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px; 
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px; 
+    background-color: transparent; 
+    transition: transform 0.5s ease;
+  }
+.minus-button:active {
+    transform: scale(3); /* ขยายรูปภาพเมื่อคลิก */
+  }
+.edit-button{
+    background-image: url('pencil.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px; 
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px; 
+    background-color: transparent; 
+    transition: transform 0.5s ease;
+  }
+.new-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  margin-bottom: 0.7rem;
+  background-color: rgb(253, 210, 138);
+  color: rgb(217, 139, 6);
+  text-decoration:none;
+  font-weight: bold;
+  
+}
+
+.new-button:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  margin-bottom: 0.7rem;
+  background-color: rgb(217, 139, 6);
+  color: rgb(253, 210, 138);
+  text-decoration:none;
+  font-weight: bold;
+  
+}
